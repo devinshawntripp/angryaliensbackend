@@ -41,9 +41,9 @@ app.use("/api", routes)
 // app.use('/', socketInit);
 
 if(process.env.NODE_ENV === "production"){
-    app.use(express.static(path.join(__dirname, "../../frontend/CrapsTwitchExtReact/build")));
+    app.use(express.static(path.join(__dirname, "/home/devinshawntripp/frontend/angryaliensfrontend/build")));
     app.get("*", (request, res) => {
-        res.sendFile(path.join(__dirname, "../../frontend/CrapsTwitchExtReact/build", "index.html"))
+        res.sendFile(path.join(__dirname, "/home/devinshawntripp/frontend/angryaliensfrontend/build", "index.html"))
     })
 } else {
     PORT = 8174
