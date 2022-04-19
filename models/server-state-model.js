@@ -18,8 +18,14 @@ module.exports = SERVER_STATE = {
         socket: null,
     }],
     areanas: [],
+    queue: [
+        {
+            owner: "",
+            nftId: null
+        }
+    ],
     appSettings: {
-
+        timerVal: 30
     },
     types: [{
         type: "Sun",

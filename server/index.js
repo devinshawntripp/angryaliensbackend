@@ -40,6 +40,8 @@ app.use("/api", routes)
 
 // app.use('/', socketInit);
 
+// "../../../frontend/angryaliensfrontend/build"
+
 if(process.env.NODE_ENV === "production"){
     app.use(express.static(path.join(__dirname, "../../../frontend/angryaliensfrontend/build")));
     app.get("*", (request, res) => {
